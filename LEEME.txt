@@ -1,0 +1,34 @@
+YELLOW HOUSE TATTOO · WEB DEMO
+==============================
+
+Contenido
+- index.html  → la web completa (HTML, CSS y JS en un solo archivo)
+- .htaccess   → caché correcta en Hostinger/Apache (súbelo junto al index)
+
+Datos usados (revisar con el estudio)
+- Dirección y teléfono: Google Maps (Av. de la Constitución 4, 29631 · +34 679 12 94 93).
+- Horario: el de su Instagram (L–V 11–14 y 16–19, sáb 11–15). Google Maps dice 16–20 por la tarde.
+- Nota 4,9 y 51 reseñas: Google Maps, octubre de 2026.
+- Instagram @yellowhousetattoo y TikTok @yellow.house.tatt en el pie.
+
+Cuando pase a ser la web oficial (buscar "DEMO" en index.html)
+1. Borrar la línea <meta name="robots" content="noindex, nofollow">.
+2. Borrar el bloque <div class="demo-pill">…</div>.
+3. Quitar la nota "Diseños de muestra · aquí irán las fotos…" (clase showcase-note).
+4. Cambiar el texto del pie "Propuesta de diseño · versión demo".
+5. Cambiar los dibujos de la sección Trabajos por fotos reales:
+   dentro de cada <div class="work-art">, sustituir el <svg>…</svg> por
+   <img src="fotos/01.webp" alt="Tatuaje realista de un león" style="width:100%;height:100%;object-fit:cover">
+
+Subir
+- Hostinger: arrastra index.html y .htaccess a public_html.
+- Funciona también abriendo index.html con doble clic.
+
+Galería de inspiración (fotos de Unsplash)
+- 14 fotos gratuitas de Unsplash, enlazadas desde su servidor (images.unsplash.com).
+  La licencia de Unsplash permite usarlas gratis, también en webs comerciales.
+- Cada foto lleva el crédito del fotógrafo y el aviso de que son referencias,
+  no trabajos del estudio. No quites ese aviso mientras sean fotos de stock.
+- Lo ideal cuando la web sea oficial: sustituirlas por fotos de sus propios tatuajes
+  (busca "inspo-item" en index.html; cada foto es un bloque <figure>).
+- Si alguna foto no carga, se oculta sola; si no carga ninguna, la sección desaparece.
